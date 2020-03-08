@@ -1,0 +1,33 @@
+header {
+  width: 100%;
+  background-color: #333;
+  color: #eee;
+}
+
+h1 {
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  border-top: 1px solid #666;
+  line-height: 36px;
+  margin-top: 20px;
+}
+
+.menu > .menu-item {
+  flex: 1;
+  border-right: 1px solid #666;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.menu > .menu-item:last-child {
+  border: 0;
+}
+
+.menu .menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
