@@ -31,3 +31,7 @@ h1 {
 .menu .menu-item:hover {
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+.menu .menu-item a {
+  display: block;
+}

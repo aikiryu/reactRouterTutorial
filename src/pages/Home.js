@@ -1,13 +1,10 @@
 import React from "react";
-import MainBn from "../components/MainBn.js";
-
-const AdBox = ({ active, children, to }) => {
+import MainBn from "../components/MainBn";
+import BigText from "../components/BigText";
+const AdBox = ({ children }) => {
   return (
     <div>
       <div className="menu-item">{children}</div>
-      <div className="test">
-        {active}, {to}
-      </div>
     </div>
   );
 };
@@ -20,6 +17,7 @@ const Home = () => {
         <AdBox>테스트</AdBox>
         <AdBox>재미있다!!</AdBox>
       </div>
+      <BigText>YAHo</BigText>
     </div>
   );
 };

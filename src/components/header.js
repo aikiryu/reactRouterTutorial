@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./css/header.css";
 import "./css/reset.css";
 const MenuItem = ({ active, children, to }) => (
@@ -12,9 +13,15 @@ class Header extends Component {
         <h1>Title</h1>
 
         <div className="menu">
-          <MenuItem>HOME</MenuItem>
-          <MenuItem>About us</MenuItem>
-          <MenuItem>Posts</MenuItem>
+          <MenuItem>
+            <Link to="/">HOME</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/about">About us</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/post">Posts</Link>
+          </MenuItem>
         </div>
       </header>
     );

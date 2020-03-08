@@ -1,9 +1,10 @@
 import React from "react";
+import BigText from "../components/BigText";
 
 const About = () => {
   return (
     <div>
-      <h2>About</h2>
+      <BigText>About</BigText>
     </div>
   );
 };
